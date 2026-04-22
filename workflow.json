@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Animal Image Upload",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "animal_classifier_agent",
+      "type": "Agent",
+      "label": "Animal Classifier Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Classification Result",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "animal_classifier_agent"
+    },
+    {
+      "source": "animal_classifier_agent",
+      "target": "output_node"
+    }
+  ]
+}

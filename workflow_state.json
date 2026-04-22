@@ -1,0 +1,24 @@
+{
+  "agents": [
+    {
+      "agent_id": "69e8dc72619d368544e83665",
+      "name": "Animal Classifier Agent",
+      "description": "Analyzes uploaded animal images using vision capabilities. Identifies common pets (cats, dogs, rabbits, hamsters), farm animals (cows, horses, chickens, pigs), and wild animals (lions, elephants, giraffes). Responds with enthusiastic, kid-friendly language, emojis, and a short fun fact about the animal.",
+      "provider_id": "Google",
+      "model": "gemini-2.5-pro",
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "agent_type": "json",
+      "response_schema": {
+        "animal_name": "string",
+        "animal_emoji": "string",
+        "confidence": "string",
+        "greeting_message": "string",
+        "fun_fact": "string",
+        "category": "string"
+      }
+    }
+  ],
+  "rag_ids": [],
+  "schedules": []
+}
